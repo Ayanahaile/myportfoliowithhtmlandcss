@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+body{
+    background-color: black;
+
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar .logo{
+    font-size: 40px;
+    font-weight:700 ;
+}
+.navbar  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    background-color: #333; /* Navbar background color */
+
+}
+.navbar li{
+    list-style: none;
+    margin: 40px;
+}
+.navbar ul li a {
+ font-size: 20px;
+ font-weight: 600;
+}
+.navbar ul li:hover a {
+    color: red;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 9% 0;
+    color: aqua;
+}
+.home-info h1{
+    font-size: 60px;
+}
+.home-info h2{
+    font-size: 40px;
+    margin: -10px;
+}
+.home-info p{
+    font-size: 20px;
+    margin: 10px 0 30px;
+}
+.home-info .btn-sci{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 25px;
+    background: greenyellow;
+    border: 2px solid;
+    border-radius: 35px;
+    box-shadow: 0 0 10px greenyellow;
+    font-size: 17px;
+    color: yellowgreen;
+    font-weight: 500;
+    transition: .5s;
+}
+.btn:hover {
+    background: transparent;
+    color: rebeccapurple;
+    box-shadow: none;
+
+}
+.home-info .btn-sci .sci {
+    margin: 20px;
+}
+.home-info .btn-sci .sci a{
+    display: inline-flex;
+    padding: 10px;
+    border: 3px solid gold;
+    border-radius: 50%;
+    font-size: 20px;
+    color: greenyellow;
+    margin: 0 10 px;
+    transition: .5s;
+}
+.home-info .btn-sci .sci a:hover{
+    background: brown;
+    color: yellow;
+    border-radius: 0 0 10px ;
+}
+.home-img .img-box{
+    width: 16vw;
+    height: 16vw;
+    background: red;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-img .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: slateblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.home-img .img-box .img-item img{
+    position:absolute;
+    display: block;
+    top: 20px;;
+    width: 70%;
+    object-fit: cover;
+}
